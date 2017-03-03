@@ -1,0 +1,183 @@
+$main-menu-item-bg: transparent;
+$main-menu-item-clr: #FFF;
+$main-menu-item-hover-clr: #fff;
+//$main-menu-item-hover-bg: ;
+
+$menu-item-active-bg: $ikinci-renk;
+$menu-item-active-clr: $main-menu-item-hover-clr;
+
+$submenu-item-hover-clr: $main-menu-item-clr;
+$submenu-item-hover-bg: #fff;
+
+// Logo & Navigation
+header{float: left; position:relative; z-index: 3; width: 100%;}
+
+#main-header{
+  height: 120px;
+  background: url(../images/dark-kry.jpg) no-repeat fixed;
+  background-size: 100%;
+  -webkit-box-shadow: 0 0px 30px red;
+  -moz-box-shadow:    0 0px 30px red;
+  box-shadow:         0 0px 30px red;
+}
+
+#logo{ 
+  display: block;
+  float: left;
+  display: inline-block;
+}
+
+/* Main menu */
+.main-menu{float: right; clear: both; padding: 0; margin-bottom: 0; margin-top: 5px;}
+.main-menu li{float:left; position: relative; list-style: none;}
+
+.main-menu li a{
+  text-decoration: none !important; 
+  color: $main-menu-item-clr;
+  display: block;
+  width: 100%; 
+  height: 100px;     
+  line-height: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding-left: 26px;
+  padding-right: 31px;
+}
+
+.main-menu li a:hover{
+  color: #dc0606;
+  @extend .transitionAll-450ms;
+}
+
+.main-menu ul li:first-child{left: -15px;}
+.main-menu ul li:first-child a{padding-left: 0;}
+.main-menu ul li:last-child a{padding-right: 9px;}
+
+.main-menu li a.nav-contact{line-height: 22px; padding-top: 25px;}
+.main-menu li a.nav-contact span{display: block;}
+
+.main-menu li a .drop-down-arrow{
+  position: absolute;
+  right: -2px;
+  top: 8px;
+}
+
+.main-menu > .user-address > a{
+    background-position: 0 -20px;
+    @include textEllipsis(165px);
+    padding-right: 10px;
+}
+
+.main-menu > .user-account > a{
+    background-position: 0 0;
+    @include textEllipsis(89px);
+    padding-right: 10px;
+}
+
+.main-menu .nav-contact span{@extend .text-normal;}
+.main-menu .nav-contact#zyngacloud span{color: #ffae00;}
+.main-menu .nav-contact#skype span{color: #3fc0f0;}
+.main-menu .nav-contact#phone span{color: #ffae00;}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  color: $ana-renk;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+.hamburger{padding: 0 !important;}
+.header-bg-swap{background: rgba(0,0,0,0.75);}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{background: #fff; width: 30px; height: 3px;}
+.hamburger-box{float: right;}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 9999;
+  background: $ana-renk;
+  @extend .transitionAll-450ms;
+  padding: 0;
+  overflow: auto;
+}
+
+.mobile-menu-behind {display: block; position: fixed; left: -100%; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35); transition: all 500ms ease;}
+
+.mobile-menu ul{
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    background: $ana-renk;
+    border-top:  8px solid $ana-renk-hard; border-bottom:  8px solid $ana-renk-hard;
+}
+
+.mobile-menu ul li {
+  @extend .float-clear;
+  margin-left: 0;
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid $ana-renk-hard;
+  position: relative;
+}
+
+.mobile-menu ul li a{
+    display:block;
+    padding: 15px;
+    text-align: left;
+    color:#fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mobile-menu ul li a .fa{margin-right: 15px;}
+
+.mobile-menu li a:hover {}
+
+.menu-slideRight{left: 0;}
+
+/* mobile-submenu */
+.mobile-menu li ul{
+  width: 100%;
+  position: relative;
+  top: 0 !important;
+  left: 0;
+  margin-top: 0 !important;
+  background: #EEEEEE;
+  border: none;
+}
+
+.mobile-menu li.dropdown{height: 54px; overflow: hidden;}
+.mobile-menu li.dropdown a{ line-height: initial !important; padding: 17px !important;}
+//.mobile-menu li.dropdown a .fa:first-child{margin-left: 0px;}
+
+.mobile-menu li.dropdown a .fa:last-child{float: right;}
+.mobile-menu li ul li{@extend .no-border;}
+.mobile-menu li ul li a{color: #222; font-size: 1em; border-bottom: 1px solid #ddd;}
+.mobile-menu li ul li a .fa{font-size: 0.8em; margin-left: 7px; margin-right: 0; float: none !important;}
+.mobile-nav-logo{display: block; @extend .float-clear,.centered; position: relative; top: 48px; width: 45%;}
+
+
+.language {
+    position: fixed;
+    background: black;
+    top: 28px;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    z-index: 3;
+    box-shadow: 0 0px 30px red;
+}
+
+.language a{display: block;}
+.language a:first-child{ margin-bottom: 8px;}

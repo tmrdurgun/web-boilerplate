@@ -1,0 +1,86 @@
+@media screen and (max-width:1200px) {
+    .mobile-menu,
+    .mobile-menu-btn {
+        display: block!important
+    }
+    #logo {
+        margin-top: 20px
+    }
+    .mobile-menu-btn {
+        margin-top: 46px;
+        margin-right: 40px
+    }
+    .pricing .table.blue-table {
+        margin: 15px 0 0!important
+    }
+    #content .page-header {
+        height: auto
+    }
+    #content #contact ul.info-list {
+        padding-left: 0!important;
+        padding-right: 0!important
+    }
+    #content .page-header.page .form {
+        margin-top: 40px;
+        margin-bottom: 40px
+    }
+    .main-container,
+    .main-container #content {
+        min-height: 0!important
+    }
+    #main-header .language {
+        position: static;
+        background: 0 0;
+        border-radius: 0
+    }
+    #main-header .language a {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0
+    }
+    #content .page-header.page #registerLoginFormView.form .form-container {
+        padding-left: 15px!important;
+        padding-right: 15px!important
+    }
+    #content article img {
+        width: 100%;
+        float: left;
+        clear: both
+    }
+    #main-footer .footer-widget {
+        height: auto!important
+    }
+    #main-footer .footer-widget .footer-widget-title,
+    #main-footer .footer-widget ul li a {
+        width: 100%;
+        text-align: center!important
+    }
+}
+
+@media screen and (max-width:768px) {
+    #logo {
+        margin-left: 20px
+    }
+}
+
+@media screen and (max-width:480px) {
+    #main-header #logo {
+        margin-top: 31px
+    }
+    #main-header #logo img {
+        width: 180px
+    }
+    #main-header .mobile-menu-btn {
+        margin-right: 0
+    }
+    #main-footer #contact .social a.social-link {
+        margin: 5px 0 10px 22px;
+        display: inline-block
+    }
+
+    #main-footer #contact .share{
+        float: left;
+        clear: both;
+        width: 100%; 
+    }
+}

@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px){
+	
+	#logo{ margin-top: 20px;}
+	
+	/* Mobile menu */
+	.mobile-menu-btn {
+		display: block !important;
+	    margin-top: 46px;
+	    margin-right: 40px;
+	}
+
+	.mobile-menu {
+		display: block !important;
+	}
+
+	.pricing .table.blue-table {
+		margin: 15px 0 0 0 !important;
+	}
+
+	#content .page-header{height: auto;}
+
+	#content #contact ul.info-list{padding-left: 0 !important; padding-right: 0 !important;}
+
+	#content .page-header.page .form{margin-top: 40px; margin-bottom: 40px;}
+
+	.main-container,  .main-container #content{min-height: 0 !important;} 
+}
+
+@media screen and (max-width: 768px){
+    #logo {margin-left: 20px;}
+	.mobile-menu-btn {margin-right: 80px !important;}
+}
+ 

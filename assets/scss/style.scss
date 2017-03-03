@@ -1,0 +1,20 @@
+/*
+  INCLUDES:
+
+	Common rules
+  Header
+  Content
+  Footer
+*/   
+ 
+ /* Common rules */ 
+ @import 'common';
+
+/* Header */   
+@import 'header';
+
+/* Content */
+
+label.error{color: red; font-size: 12px; white-space: nowrap; float: left; margin: 6px 0; @extend .text-italic, .text-light; }
+/* Footer */   
+@import 'footer';
